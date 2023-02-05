@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d1e9ae7562.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#">Portf<span>olio.</span></a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div>
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Meghan</span><br> Sharma from India.</h1>
+                </div>
+                <img src="images/Photo.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/midsection picture.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Technical expertise in JavaScript, React, Redux, CSS, HTML, Data Structures, Algorithms, Analysis, Design, Development, in Web Development domain. Experience in designing various forms, tooltips, menus, tabs, Responsive website, animated effects, and debugging. Exposure with AWS cloud and have leveraged multiple AWS services including EC2, S3, RDS, Athena, SQS, SNS, Redshift, etc.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('educations')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Websites Development</li>
+                            <li><span>Cloud Services</span><br>AWS and its Services</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Ecommerce Website</span><br>Tech Stack: Vanilla JavaScript | CSS | HTML | LocalStorage | JSON </li>
+                            <li><span>Responsive Blogging Site</span><br>Tech Stack: CSS | HTML | JavaScript | Hostinger | Git | Github</li>
+                            <li><span>Spotify Clone</span><br>Tech Stack: CSS | HTML | JavaScript | Font-Awesome</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span>UpGrad Campus</span><br>Full Stack Web Development</li>
+                            <li><span>Programming Pathshala</span><br>Programming Bootcamp</li>
+                            <li><span>AIET Jaipur</span><br>Bachelor's in Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service sectior -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Have an affinity towards Front-End development and exposure with multiple UI development tools like JavaScript, CSS, HTML, Bootstrap, React, Redux and creating responsive user friendly websites ....</p>
+                    <a href="https://www.linkedin.com/in/meghan-sharma-421919176/" target="_blank" >Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Services</h2>
+                    <p>Have exposure in multiple Amazon Web Services, to name a few, EC2 Instances, S3 Buckets, RDS, Load balancer, Athena, SQS, SNS and more, also possess a basic understanding about the architecture and infrastructure....</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users-rectangle"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Experience in changing the feel and feature of the UI to enhance the user experience and adding new features. Creating the UI of the application from scratch and adding Animations, Transitions, Media queris to it....</p>
+                    <a href="https://codepen.io/Meghansha" target="_blank" >Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  projects -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h2>Blogging Site</h2>
+                        <p>This website contains blogs on different topics and consists of several sections to which you can navigate.
+                        </p>
+                        <a href="https://mellow-custard-02e461.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h2>Spotify Clone</h2>
+                        <p>It contains a list of songs you can choose to hear from and has all the features found in a typical music player.
+                        </p>
+                        <a href="https://sparkling-llama-8f0e10.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h2>E-Comm Website</h2>
+                        <p>
+                            It displays different products in various categories from which the users can choose and order.
+                        </p>
+                        <a href="https://cozy-palmier-fcf510.netlify.app" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://codepen.io/Meghansha" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact / footer -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fas fa-paper-plane"></i> officialmeghan1@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9509234051</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/meghan.veshishtha" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/meghan_sharma/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/meghan-sharma-421919176/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="downloadbtn">
+                        <a href="images/Meghan's-Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>           
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Thank you for visiting by...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
